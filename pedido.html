@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fazer Pedido | Doce Sabor</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- =================================
+         CABEÇALHO
+    ================================== -->
+    <header class="header">
+        <div class="logo">
+            Doce Sabor
+        </div>
+        <nav class="menu">
+            <a href="index.html">
+                Início
+            </a>
+            <a href="index.html#sabores">
+                Sabores
+            </a>
+            <a href="index.html#sobre">
+                Sobre nós
+            </a>
+        </nav>
+        <a href="index.html" class="carrinho">
+            ←
+        </a>
+    </header>
+    <!-- =================================
+         CONTEÚDO PRINCIPAL
+    ================================== -->
+    <main>
+        <section class="pagina-pedido">
+            <div class="pedido-container">
+                <!-- TÍTULO -->
+                <div class="pedido-titulo">
+                    <p class="subtitulo">
+                        Doce Sabor
+                    </p>
+                    <h1>
+                        Monte sua caixinha
+                    </h1>
+                    <p>
+                        Escolha a quantidade de caixinhas
+                        e os sabores que deseja.
+                    </p>
+                </div>
+                <!-- =================================
+                     DADOS DO CLIENTE
+                ================================== -->
+                <div class="formulario-secao">
+                    <h2>
+                        Seus dados
+                    </h2>
+                    <!-- NOME -->
+                    <div class="campo">
+                        <label for="nome">
+                            Nome
+                        </label>
+                        <input
+                            type="text"
+                            id="nome"
+                            placeholder="Digite seu nome"
+                        >
+                    </div>
+                    <!-- TELEFONE -->
+                    <div class="campo">
+                        <label for="telefone">
+                            Telefone
+                        </label>
+                        <input
+                            type="tel"
+                            id="telefone"
+                            placeholder="(63) 99999-9999"
+                        >
+                    </div>
+                    <!-- ENDEREÇO -->
+                    <div class="campo">
+                        <label for="endereco">
+                            Endereço
+                        </label>
+                        <input
+                            type="text"
+                            id="endereco"
+                            placeholder="Rua, número, bairro..."
+                        >
+                    </div>
+                </div>
+                <!-- =================================
+                     QUANTIDADE DE CAIXINHAS
+                ================================== -->
+                <div class="formulario-secao">
+                    <h2>
+                        Seu pedido
+                    </h2>
+                    <div class="campo">
+                        <label for="quantidadeCaixas">
+                            Quantidade de caixinhas
+                        </label>
+                        <input
+                            type="number"
+                            id="quantidadeCaixas"
+                            min="1"
+                            value="1"
+                        >
+                    </div>
+                    <div class="informacao-caixa">
+                        🍫 Cada caixinha possui
+                        <strong>4 brigadeiros</strong>
+                        e custa
+                        <strong>R$ 15,00</strong>.
+                    </div>
+                    <div class="campo">
+                      <label for="pagamento">Forma de pagamento</label>
+
+                     <select id="pagamento" required>
+                     <option value="" disabled selected>
+                       Escolha uma forma de pagamento
+                     </option>
+
+                     <option value="Dinheiro">
+                          💵 Dinheiro
+                     </option>
+
+                     <option value="Pix">
+                            📱 Pix
+                     </option>
+
+                     <option value="Cartão">
+                          💳 Cartão
+                     </option>
+                     </select>
+
+                    </div>
+                     <div class="campo" id="campoTroco" style="display: none;">
+
+                          <label for="troco">
+                          Precisa de troco?
+                         </label>
+
+                        <select id="troco">
+                              <option value="" disabled selected>
+                               Escolha uma opção
+                               </option>
+
+                              <option value="Não">
+                                    Não
+                              </option>
+
+                            <option value="Sim">
+                                 Sim
+                             </option>
+                            </select>
+
+                           </div>
+
+                    <div class="campo" id="campoValorTroco" style="display: none;">
+
+                     <label for="valorTroco">
+                      Troco para quanto?
+                     </label>
+
+                        <input
+                       type="number"
+                       id="valorTroco"
+                       placeholder="Ex: 50,00"
+                       min="0"
+                       step="0.01"
+                     >
+
+                   </div>
+                </div>
+                <!-- =================================
+                     CAIXINHAS
+                ================================== -->
+                <div id="caixasContainer">
+                    <!--
+
+                        As caixinhas serão
+                        criadas aqui pelo JavaScript.
+
+                    -->
+                </div>
+                <!-- =================================
+                     RESUMO DO PEDIDO
+                ================================== -->
+                <div class="resumo-pedido">
+                    <div>
+                        <span>
+                            Caixinhas
+                        </span>
+                        <strong id="resumoCaixas">
+                            1
+                        </strong>
+                    </div>
+                    <div>
+                        <span>
+                            Total
+                        </span>
+                        <strong id="valorTotal">
+                            R$ 15,00
+                        </strong>
+                    </div>
+                </div>
+                <!-- =================================
+                     BOTÃO
+                ================================== -->
+                <button
+                    type="button"
+                    class="botao botao-whatsapp"
+                    id="enviarPedido"
+                >
+                    📱 Enviar pedido pelo WhatsApp
+                </button>
+            </div>
+        </section>
+    </main>
+    <!-- =================================
+         RODAPÉ
+    ================================== -->
+    <footer class="footer">
+        <div class="footer-logo">
+            Doce Sabor
+            <p>
+                Brigadeiros artesanais ❤️
+            </p>
+        </div>
+        <div class="footer-links">
+            <a href="index.html">
+                Início
+            </a>
+            <a href="index.html#sabores">
+                Sabores
+            </a>
+            <a href="index.html#sobre">
+                Sobre nós
+            </a>
+        </div>
+        <div class="footer-contato">
+            <p>
+                Faça seu pedido
+            </p>
+            <a href="pedido.html">
+                📱 Pedir agora
+            </a>
+        </div>
+    </footer>
+    <script src="pedido.js"></script>
+</body>
+</html>
