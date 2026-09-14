@@ -1314,3 +1314,27 @@ a {
     }
 
 }
+
+.informacao-sabores {
+
+    width: fit-content;
+
+    margin: 0 auto 35px;
+
+    padding: 12px 22px;
+
+    background-color: var(--creme-claro);
+
+    border: 1px solid var(--rosa-claro);
+
+    border-radius: 30px;
+
+    color: var(--marrom);
+
+    font-size: 0.95rem;
+
+    text-align: center;
+
+    box-shadow: 0 5px 15px rgba(73, 54, 45, 0.06);
+
+}

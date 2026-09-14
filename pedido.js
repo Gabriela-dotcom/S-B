@@ -116,7 +116,7 @@ function montarMensagem() {
     // Começa a mensagem
     let mensagem = "";
 
-    mensagem += "🍫 *NOVO PEDIDO — DOCE SABOR*\n";
+    mensagem += "🍫 *NOVO PEDIDO — S & B*\n";
     mensagem += "━━━━━━━━━━━━━━━━━━━━\n\n";
 
 
