@@ -184,14 +184,15 @@ a {
 }
 
 
-/*
-   Como a imagem já está sendo usada
-   como fundo, escondemos a imagem
-   duplicada do HTML.
-*/
-
 .hero-imagem {
-    display: none;
+    display: block;
+}
+
+.hero-imagem img {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    display: block;
 }
 
 
