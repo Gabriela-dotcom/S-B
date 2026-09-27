@@ -6,7 +6,8 @@ const ESPACOS_POR_CAIXA = 4;
 const sabores = [
     "Brigadeiro Tradicional",
     "Brigadeiro de Ninho",
-    "Casadinho"
+    "Casadinho",
+    "Brigadeiro de Churros"
 ];
 
 
