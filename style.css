@@ -183,9 +183,9 @@ a {
     background-position: center;
 }
 
-
+/* imagem, retirada */
 .hero-imagem {
-    display: block;
+    display: none;
 }
 
 .hero-imagem img {
